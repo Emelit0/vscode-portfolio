@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400&display=swap');
+
+.titlebar {
+    background-color: var(--titlebar-bg);
+    height: 30px;
+    padding: 0 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.85rem;
+    border-bottom: 1px solid #191d20;
+    color: #fff;
+}
+
+.navbar_items {
+    flex: 1;
+    display: flex;
+    margin-right: auto;
+    margin-left: 0.5rem;
+}
+
+.navbar_items > * {
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.title {
+    text-align: center;
+    flex: 1;
+}
+
+.window_btns {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin-left: auto;
+}
+
+.vsicon {
+    padding: 8px;
+    z-index: 1;
+}
