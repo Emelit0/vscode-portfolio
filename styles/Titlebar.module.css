@@ -38,6 +38,13 @@
 }
 
 .vsicon {
-    padding: 8px;
-    z-index: 1;
+    left: 4px;
+    box-sizing: border-box;
+    padding: 0;
+    border: none;
+    margin: auto;
+    display: block;
+    width: 16px;
+    height: 16px;
+
 }
