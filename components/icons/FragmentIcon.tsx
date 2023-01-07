@@ -1,4 +1,4 @@
-const FragmentIcon = (props) => {
+const FragmentIcon = (props: any) => {
     return (
       <svg
         width={16}
