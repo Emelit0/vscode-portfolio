@@ -1,12 +1,10 @@
-
-
-import Titlebar from '../components/Titlebar.jsx'
-
+import Sidebar from "../components/Sidebar";
+import Titlebar from "../components/Titlebar";
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
@@ -17,7 +15,9 @@ export default function RootLayout({
       <head />
       <body>
         <Titlebar />
-        {children}</body>
+        <Sidebar />
+        {children}
+      </body>
     </html>
-  )
+  );
 }

@@ -1,3 +1,5 @@
+// "use client";
+
 import Link from "next/link";
 import { useRouter } from "next/router";
 import FragmentIcon from "./icons/FragmentIcon";
@@ -8,6 +10,7 @@ import SettingsIcon from "./icons/SettingsIcon";
 import AccountIcon from "./icons/AccountIcon";
 import MailIcon from "./icons/EmailIcon";
 import styles from "../styles/Sidebar.module.css";
+import { ReactElement } from "react";
 
 const upperSidebarIcons = [
   {
@@ -43,7 +46,7 @@ const lowerSidebarIcons = [
   },
 ];
 
-const Sidebar = () => {
+const Sidebar: React.FC = (): ReactElement => {
   const router = useRouter();
 
   return (
@@ -68,6 +71,23 @@ const Sidebar = () => {
           </Link>
         ))}
       </div>
+      <div className={styles.sidebarBottom}>
+        {lowerSidebarIcons.map(({ Icon, path }) => (
+          <div className={styles.iconContainer}>
+            <Link href={path} key={path} />
+            <Icon
+              className={styles.icon}
+              fill={
+                router.pathname === path
+                  ? "rgb(225, 228, 232)"
+                  : "rgb(106, 115, 125)"
+              }
+            />
+          </div>
+        ))}
+      </div>
     </aside>
   );
 };
+
+export default Sidebar;
