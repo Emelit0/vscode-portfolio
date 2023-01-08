@@ -1,7 +1,7 @@
 // "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import FragmentIcon from "./icons/FragmentIcon";
 import FilesIcon from "./icons/FilesIcon";
 import GithubIcon from "./icons/GithubIcon";
@@ -11,6 +11,7 @@ import AccountIcon from "./icons/AccountIcon";
 import MailIcon from "./icons/EmailIcon";
 import styles from "../styles/Sidebar.module.css";
 import { ReactElement } from "react";
+import { usePathname } from "next/navigation";
 
 const upperSidebarIcons = [
   {
@@ -48,6 +49,7 @@ const lowerSidebarIcons = [
 
 const Sidebar: React.FC = (): ReactElement => {
   const router = useRouter();
+  const pathName = usePathname();
 
   return (
     <aside className={styles.sidebar}>
@@ -56,12 +58,12 @@ const Sidebar: React.FC = (): ReactElement => {
           <Link href={path} key={path}>
             <div
               className={`${styles.iconContainer} ${
-                router.pathname === path && styles.active
+                pathName === path && styles.active
               }`}
             >
               <Icon
                 fill={
-                  router.pathname === path
+                  pathName === path
                     ? "rgb(225, 228, 232)"
                     : "rgb(106, 115, 125)"
                 }
@@ -78,9 +80,7 @@ const Sidebar: React.FC = (): ReactElement => {
             <Icon
               className={styles.icon}
               fill={
-                router.pathname === path
-                  ? "rgb(225, 228, 232)"
-                  : "rgb(106, 115, 125)"
+                pathName === path ? "rgb(225, 228, 232)" : "rgb(106, 115, 125)"
               }
             />
           </div>
