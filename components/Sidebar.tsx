@@ -1,7 +1,6 @@
 // "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import FragmentIcon from "./icons/FragmentIcon";
 import FilesIcon from "./icons/FilesIcon";
 import GithubIcon from "./icons/GithubIcon";
@@ -48,7 +47,6 @@ const lowerSidebarIcons = [
 ];
 
 const Sidebar: React.FC = (): ReactElement => {
-  const router = useRouter();
   const pathName = usePathname();
 
   return (
