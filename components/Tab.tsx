@@ -4,7 +4,13 @@ import { usePathname } from "next/navigation";
 import styles from "../styles/Tab.module.css";
 import { ReactElement } from "react";
 
-const Tab: React.FC = ({ icon, filename, path }): ReactElement => {
+type imageProps {
+  icon: String,
+  filename: String,
+  path: String,
+}
+
+const Tab: React.FC = ({ icon, filename, path }: imageProps)  => {
   const pathName = usePathname();
 
   return (
