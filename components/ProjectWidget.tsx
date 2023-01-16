@@ -1,7 +1,17 @@
 import Image from "next/image";
 import styles from "../styles/ProjectCard.module.css";
 
-const ProjectCard = ({ project }) => {
+type ProjectProps = {
+  id: string;
+  name: string;
+  image: string;
+  description: string;
+  tags: string[];
+  source_code: string;
+  demo: string;
+};
+
+const ProjectWidget = ({ project }: { project: ProjectProps }) => {
   return (
     <div className={styles.card}>
       <Image src={project.image} height={300} width={600} alt={project.name} />
@@ -40,4 +50,4 @@ const ProjectCard = ({ project }) => {
   );
 };
 
-export default ProjectCard;
+export default ProjectWidget;
