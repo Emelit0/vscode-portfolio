@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "GraphQL Server",
+    "image": "https://imgur.com/kbGs6zH.png",
+    "description": "A graphql server with authentication and authorization",
+    "tags": ["next", "node", "mongodb", "tailwind", "graphql", "apollo-server"],
+    "source_code": "https://github.com/itsnitinr/driwwwle-v2",
+    "demo": "https://driwwwle.com/"
+  },
+  {
+    "id": 2,
+    "name": "mern socail media",
+    "image": "https://imgur.com/tAZotn3.png",
+    "description": "A social media platform built with MERN stack",
+    "tags": ["react", "node", "mongodb", "redux", "razorpay", "material-ui"]
+  },
+  {
+    "id": 3,
+    "name": "mern rest api",
+    "image": "https://imgur.com/8FFqaX8.png",
+    "description": "REST api ",
+    "tags": ["react", "node", "mongodb", "redux", "razorpay", "material-ui"],
+    "source_code": "https://github.com/Emelit0"
+  },
+  {
+    "id": 4,
+    "name": "VSCode Portfolio",
+    "image": "https://imgur.com/mKkz0iz.png",
+    "description": "A vscode themed portfolio site",
+    "tags": ["next", "css-modules"],
+    "source_code": "https://github.com/Emelit0/vscode-portfolio"
+  }
+]
