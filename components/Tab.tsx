@@ -2,15 +2,15 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import styles from "../styles/Tab.module.css";
-import { ReactElement } from "react";
+import * as React from "react";
 
-type imageProps {
-  icon: String,
-  filename: String,
-  path: String,
-}
+type imageProps = {
+  icon: string;
+  filename: string;
+  path: string;
+};
 
-const Tab: React.FC = ({ icon, filename, path }: imageProps)  => {
+const Tab = ({ icon, filename, path }: imageProps) => {
   const pathName = usePathname();
 
   return (
