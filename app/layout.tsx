@@ -3,7 +3,7 @@ import Titlebar from "../components/Titlebar";
 import Explorer from "../components/Explorer";
 import styles from "../styles/Layout.module.css";
 import Footer from "../components/Footer";
-import { style } from "@mui/system";
+import TabBar from "../components/TabBar";
 
 export default function RootLayout({
   children,
@@ -22,6 +22,10 @@ export default function RootLayout({
         <div className={styles.main}>
           <Sidebar />
           <Explorer />
+          <div style={{ width: "100%" }}>
+            <TabBar />
+            <main className={styles.content}>{children}</main>
+          </div>
         </div>
         {children}
         <Footer />
