@@ -21,7 +21,7 @@ const explorerIcons = [
   },
   {
     name: "projects",
-    path: "/",
+    path: "/projects",
     icon: "nestGuardTsRed.svg",
   },
   {
