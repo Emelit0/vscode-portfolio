@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../styles/ProjectCard.module.css";
+import styles from "../styles/ProjectWidget.module.css";
 
 type ProjectProps = {
   id: string;
