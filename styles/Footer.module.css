@@ -37,3 +37,12 @@
 .section:hover {
   background: var(--bottombar-hover-bg);
 }
+
+@media screen and (max-width: 600px) {
+  .footer {
+    font-size: 0.6rem;
+  }
+  .section {
+    margin-right: 0.5rem;
+  }
+}
