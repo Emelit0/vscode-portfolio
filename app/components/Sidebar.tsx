@@ -1,5 +1,3 @@
-// "use client";
-
 import Link from "next/link";
 import FragmentIcon from "./icons/FragmentIcon";
 import FilesIcon from "./icons/FilesIcon";
