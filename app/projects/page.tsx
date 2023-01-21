@@ -1,15 +1,16 @@
 import { Inter } from "@next/font/google";
 import "../../styles/global.css";
 import ProjectsPage from "./projects";
-
-//@ts-expect-error Server Component
+import { ReactElement } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+const Home: React.FC = (): ReactElement => {
   return (
-    <main>
+    <>
       <ProjectsPage />
-    </main>
+    </>
   );
-}
+};
+
+export default Home;
