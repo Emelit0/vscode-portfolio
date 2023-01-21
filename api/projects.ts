@@ -7,5 +7,5 @@ export const getProjects = () => {
 
 export default (req: NextApiRequest, res: NextApiResponse) => {
   const projects = getProjects();
-  res.json(projects);
+  res.status(200).json(projects);
 };

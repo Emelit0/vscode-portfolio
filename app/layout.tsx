@@ -1,9 +1,9 @@
-import Sidebar from "../components/Sidebar";
-import Titlebar from "../components/Titlebar";
-import Explorer from "../components/Explorer";
+import Sidebar from "./components/Sidebar";
+import Titlebar from "./components/Titlebar";
+import Explorer from "./components/Explorer";
 import styles from "../styles/Layout.module.css";
-import Footer from "../components/Footer";
-import TabBar from "../components/TabBar";
+import Footer from "./components/Footer";
+import TabBar from "./components/TabBar";
 
 export default function RootLayout({
   children,
