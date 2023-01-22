@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -17,7 +19,7 @@ const Tab = ({ icon, filename, path }: imageProps) => {
     <Link href={path}>
       <div className={`${styles.tab} ${pathName === path && styles.active} `}>
         <Image src={icon} alt={filename} height={18} width={18} />
-        <p>{filename}</p>
+        <p className={styles.tabText}>{filename}</p>
       </div>
     </Link>
   );
