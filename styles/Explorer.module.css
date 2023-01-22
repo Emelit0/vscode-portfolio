@@ -8,7 +8,7 @@
 
 .heading {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 0.8rem;
   letter-spacing: 1px;
   display: flex;
@@ -36,9 +36,10 @@
   display: flex;
   align-items: center;
   font-size: 0.875rem;
+  color: rgb(225, 228, 232);
 }
 
-.file p {
+.fileName {
   margin-left: 5px;
 }
 
@@ -46,10 +47,12 @@
   background: var(--explorer-hover-bg);
 }
 
-.checkbox {
+.checkBox {
   position: absolute;
   opacity: 0;
-  z-index: -1;
+  left: 68px;
+  top: 80px;
+  z-index: 1;
 }
 
 .chevron {
@@ -72,4 +75,20 @@
   .explorer {
     display: none;
   }
+}
+
+.link:link {
+  text-decoration: none;
+}
+
+.link:visited {
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
+.link:active {
+  text-decoration: none;
 }

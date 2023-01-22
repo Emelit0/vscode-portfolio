@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400&display=swap");
 
 *,
 *::before,
@@ -8,17 +8,12 @@
   box-sizing: border-box;
 }
 
-body {
-  height: 100vh;
-  width: 100vw;
-}
-
 :root {
   --main-bg: #24292e;
   --bg-text: rgba(56, 58, 61, 0.35);
   --text-color: #efefef;
   --accent-color: #f9826c;
-  --titlebar-bg:  #303335;
+  --titlebar-bg: #1f2428;
   --sidebar-bg: #24292e;
   --sidebar-hover-bg: #1f2428;
   --explorer-bg: #1f2428;
