@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import FragmentIcon from "./icons/FragmentIcon";
 import FilesIcon from "./icons/FilesIcon";
@@ -12,22 +14,27 @@ import { usePathname } from "next/navigation";
 
 const upperSidebarIcons = [
   {
+    id: 1,
     Icon: FilesIcon,
     path: "/",
   },
   {
+    id: 2,
     Icon: GithubIcon,
     path: "/github",
   },
   {
+    id: 3,
     Icon: FragmentIcon,
     path: "/projects",
   },
   {
+    id: 4,
     Icon: PencilIcon,
     path: "/docs",
   },
   {
+    id: 5,
     Icon: MailIcon,
     path: "/contact",
   },
@@ -35,31 +42,33 @@ const upperSidebarIcons = [
 
 const lowerSidebarIcons = [
   {
+    id: 6,
     Icon: AccountIcon,
     path: "/about",
   },
   {
+    id: 7,
     Icon: SettingsIcon,
     path: "/settings",
   },
 ];
 
 const Sidebar: React.FC = (): ReactElement => {
-  const pathName = usePathname();
+  const pathname = usePathname();
 
   return (
     <aside className={styles.sidebar}>
       <div className={styles.sidebarTop}>
-        {upperSidebarIcons.map(({ Icon, path }) => (
-          <Link href={path} key={path}>
+        {upperSidebarIcons.map(({ Icon, id, path }) => (
+          <Link href={path} key={id}>
             <div
               className={`${styles.iconContainer} ${
-                pathName === path && styles.active
+                pathname === path && styles.active
               }`}
             >
               <Icon
                 fill={
-                  pathName === path
+                  pathname === path
                     ? "rgb(225, 228, 232)"
                     : "rgb(106, 115, 125)"
                 }
@@ -70,13 +79,13 @@ const Sidebar: React.FC = (): ReactElement => {
         ))}
       </div>
       <div className={styles.sidebarBottom}>
-        {lowerSidebarIcons.map(({ Icon, path }) => (
+        {lowerSidebarIcons.map(({ Icon, id, path }) => (
           <div className={styles.iconContainer}>
-            <Link href={path} key={path} />
+            <Link href={path} key={id} />
             <Icon
               className={styles.icon}
               fill={
-                pathName === path ? "rgb(225, 228, 232)" : "rgb(106, 115, 125)"
+                pathname === path ? "rgb(225, 228, 232)" : "rgb(106, 115, 125)"
               }
             />
           </div>
