@@ -19,19 +19,19 @@ const explorerIcons = [
     icon: "js.svg",
   },
   {
-    name: "projects",
+    name: "projects.ts",
     path: "/projects",
-    icon: "nestGuardTsRed.svg",
-  },
-  {
-    name: "about.css",
-    path: "/",
-    icon: "css.svg",
+    icon: "tsLogo.svg",
   },
   {
     name: ".random",
     path: "/",
     icon: "gitignore.svg",
+  },
+  {
+    name: "about.css",
+    path: "/",
+    icon: "css.svg",
   },
   {
     name: "contact.vite",
@@ -45,16 +45,16 @@ const Explorer: React.FC = (): ReactElement => {
   return (
     <>
       <div className={styles.explorer}>
-        <p>Explorer</p>
+        <p className={styles.title}>Explorer</p>
         <div>
           <input
             type="checkbox"
             className={styles.checkBox}
-            id="files-chechbox"
-            onChange={() => setIsShown(!isShown)}
+            id="portfolio-chechbox"
             checked={isShown}
+            onChange={() => setIsShown(!isShown)}
           />
-          <label htmlFor="files-checkbox" className={styles.heading}>
+          <label htmlFor="portfolio-checkbox" className={styles.heading}>
             <ChevronRight
               className={styles.chevron}
               style={isShown ? { transform: "rotate(90deg)" } : {}}
@@ -66,7 +66,7 @@ const Explorer: React.FC = (): ReactElement => {
             style={isShown ? { display: "block" } : { display: "none" }}
           >
             {explorerIcons.map((item) => (
-              <Link href={item.path} key={item.name}>
+              <Link className={styles.link} href={item.path} key={item.name}>
                 <div className={styles.file}>
                   <Image
                     src={`/${item.icon}`}
@@ -74,7 +74,7 @@ const Explorer: React.FC = (): ReactElement => {
                     height={18}
                     width={18}
                   />{" "}
-                  <p>{item.name}</p>
+                  <p className={styles.fileName}>{item.name}</p>
                 </div>
               </Link>
             ))}
