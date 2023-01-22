@@ -24,7 +24,7 @@ const Footer: React.FC = (): ReactElement => {
           <ErrorIcon className={styles.icon} />
           <p className={styles.errText}>0</p>
           <WarningIcon className={styles.icon} />
-          <p>0</p>
+          <p className={styles.errText}>0</p>
         </div>
       </div>
       <div className={styles.container}>
