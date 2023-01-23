@@ -44,7 +44,7 @@ const ContactCode = () => {
         </p>
       ))}
       {contactItems.slice(8, contactItems.length).map((item, index) => (
-        <p className={styles.line} key={index}>
+        <p className={styles.line} key={index + 10}>
           &nbsp;&nbsp;{item.social}:{" "}
           <a href={item.href} target="_blank" rel="noopener">
             {item.link}
