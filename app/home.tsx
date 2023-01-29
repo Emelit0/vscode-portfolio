@@ -12,7 +12,9 @@ const Home: React.FC = (): ReactElement => {
             autoStart: true,
             loop: true,
           }}
-        ></TypewriterComponent>
+        >
+          <h1 className="title">Hello World</h1>
+        </TypewriterComponent>
       </SyntaxHighlighter>
     </div>
   );
