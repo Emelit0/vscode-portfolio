@@ -7,10 +7,14 @@ const Home: React.FC = (): ReactElement => {
   const first_text = "1   const sayHello = () = {";
   const second_text = "2      console.log('hello')";
   const third_text = "3   //This prints out Hello World";
+  const fouth_text = "4   //This prints out Hello World";
+  const fith_text = "5   const { id } = req.body /";
 
   const [text1, setText1] = useState("");
   const [text2, setText2] = useState("");
   const [text3, setText3] = useState("");
+  const [text4, setText4] = useState("");
+  const [text5, setText5] = useState("");
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -28,6 +32,17 @@ const Home: React.FC = (): ReactElement => {
     if (text2 === second_text) setText3(third_text.slice(0, text3.length + 1));
     else return;
   }, 50);
+
+  setTimeout(() => {
+    if (text3 === third_text) setText4(fouth_text.slice(0, text4.length + 1));
+    else return;
+  }, 50);
+
+  setTimeout(() => {
+    if (text4 === fouth_text) setText5(fith_text.slice(0, text5.length + 1));
+    else return;
+  }, 50);
+
   return (
     <div className="container">
       <div className="App">
