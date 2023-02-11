@@ -1,5 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  images: {
+    domains: [
+      "avatars.githubusercontent.com",
+      "res.cloudinary.com",
+      "avatars.githubusercontent.com",
+      "imgur.com",
+    ],
+  },
   experimental: {
     appDir: false,
   },
