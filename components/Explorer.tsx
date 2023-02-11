@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { ReactElement } from "react";
 import { ChevronRight } from "@mui/icons-material";
-import styles from "../../styles/Explorer.module.css";
+import styles from "../styles/Explorer.module.css";
 
 const explorerIcons = [
   {
@@ -24,18 +24,18 @@ const explorerIcons = [
     icon: "tsLogo.svg",
   },
   {
-    name: ".random",
-    path: "/",
+    name: ".github",
+    path: "/github",
     icon: "gitignore.svg",
   },
   {
     name: "about.css",
-    path: "/",
+    path: "/about",
     icon: "css.svg",
   },
   {
     name: "contact.vite",
-    path: "/",
+    path: "/contact",
     icon: "vite.svg",
   },
 ];
