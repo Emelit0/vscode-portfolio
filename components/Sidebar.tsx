@@ -1,5 +1,3 @@
-
-
 import Link from "next/link";
 import FragmentIcon from "./icons/FragmentIcon";
 import FilesIcon from "./icons/FilesIcon";
@@ -8,7 +6,7 @@ import PencilIcon from "./icons/PencilIcon";
 import SettingsIcon from "./icons/SettingsIcon";
 import AccountIcon from "./icons/AccountIcon";
 import MailIcon from "./icons/EmailIcon";
-import styles from "../../styles/Sidebar.module.css";
+import styles from "../styles/Sidebar.module.css";
 import { ReactElement } from "react";
 import { usePathname } from "next/navigation";
 

@@ -2,7 +2,7 @@ import Image from "next/image";
 import { ReactElement } from "react";
 // import RemoveOutlinedIcon from '@mui/icons-material/RemoveOutlined';
 // import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
-import styles from "../../styles/Titlebar.module.css";
+import styles from "../styles/Titlebar.module.css";
 
 const Titlebar: React.FC = (): ReactElement => {
   return (
@@ -23,7 +23,7 @@ const Titlebar: React.FC = (): ReactElement => {
         <p>Terminal</p>
         <p>Help</p>
       </div>
-      <p className={styles.title}>Kevin Stoll - Visual Studio Code</p>
+      <p className={styles.title}>Emelito - Visual Studio Code</p>
       <div className={styles.window_btns}>
         {/* <RemoveOutlinedIcon />
             <Image src='../public/window-restoredown.svg' alt='window-restoredown' width={12} height={12}/>

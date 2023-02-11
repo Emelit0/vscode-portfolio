@@ -4,7 +4,7 @@ import BellIcon from "./icons/BellIcon";
 import CheckIcon from "./icons/CheckIcon";
 import NextjsIcon from "./icons/NextJsIcon";
 import SourceControlIcon from "./icons/SourceIcon";
-import styles from "../../styles/Footer.module.css";
+import styles from "../styles/Footer.module.css";
 import { ReactElement } from "react";
 
 const Footer: React.FC = (): ReactElement => {

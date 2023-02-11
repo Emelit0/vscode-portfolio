@@ -3,7 +3,7 @@ import GitForkIcon from "./icons/GitForkIcon";
 import StarIcon from "./icons/StarIcon";
 import GithubIcon from "./icons/GithubIcon";
 import LinkIcon from "./icons/LinkIcon";
-import styles from "../styles/RepoCard.module.css";
+import styles from "../styles/RepoWidget.module.css";
 
 const RepoWidget = ({ repo }: any) => {
   return (
