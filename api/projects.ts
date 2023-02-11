@@ -5,9 +5,7 @@ export const getProjects = () => {
   return data;
 };
 
-const fetchProjects = (req: NextApiRequest, res: NextApiResponse) => {
+export default (req: NextApiRequest, res: NextApiResponse) => {
   const projects = getProjects();
-  res.status(200).json(projects);
+  res.json(projects);
 };
-
-export default fetchProjects;

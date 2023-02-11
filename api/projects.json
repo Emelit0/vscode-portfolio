@@ -5,15 +5,15 @@
     "image": "https://imgur.com/kbGs6zH.png",
     "description": "A graphql server with authentication and authorization",
     "tags": ["next", "node", "mongodb", "tailwind", "graphql", "apollo-server"],
-    "source_code": "https://github.com/itsnitinr/driwwwle-v2",
-    "demo": "https://driwwwle.com/"
+    "source_code": "https://github.com/itsnitinr/driwwwle-v2"
   },
   {
     "id": 2,
     "name": "mern socail media",
     "image": "https://imgur.com/tAZotn3.png",
     "description": "A social media platform built with MERN stack",
-    "tags": ["react", "node", "mongodb", "redux", "razorpay", "material-ui"]
+    "tags": ["react", "node", "mongodb", "redux", "razorpay", "material-ui"],
+    "source_code": "https://github.com/Emelit0"
   },
   {
     "id": 3,
