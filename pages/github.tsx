@@ -1,7 +1,7 @@
 import Image from "next/image";
 import GitHubCalendar from "react-github-calendar";
-import RepoWidget from "../components/RepoWidget"
-import styles from "../styles/GithubPage.module.css";
+import RepoWidget from "../components/RepoWidget";
+import styles from "../styles/Github.module.css";
 
 const GithubPage = ({ repos, user }: any) => {
   const theme = {

@@ -1,7 +1,9 @@
+"use client";
+
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { ReactElement } from "react";
 import { useEffect, useState } from "react";
-import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import atomOneDark from "react-syntax-highlighter/dist/cjs/styles/hljs/atom-one-dark";
 
 const Home: React.FC = (): ReactElement => {
   const first_text = "1   const sayHello = () = {";
@@ -88,3 +90,11 @@ const Home: React.FC = (): ReactElement => {
     </div>
   );
 };
+
+export async function getStaticProps() {
+  return {
+    props: { title: "Home" },
+  };
+}
+
+export default Home;

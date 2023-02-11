@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import ContactCode from "../components/ContactWidget";
 import styles from "../styles/ContactPage.module.css";
@@ -87,5 +89,13 @@ const ContactPage = () => {
     </div>
   );
 };
+
+export async function getStaticProps() {
+  return {
+    props: {
+      title: "Contact",
+    },
+  };
+}
 
 export default ContactPage;
