@@ -5,7 +5,7 @@ import "../styles/global.css";
 const App = ({ Component, pageProps }: any) => {
   return (
     <Layout>
-      <MetaHead title={`Kevin Stoll | ${pageProps.title}`} />
+      <MetaHead title={`Emelito | ${pageProps.title}`} />
       <Component {...pageProps} />
     </Layout>
   );
