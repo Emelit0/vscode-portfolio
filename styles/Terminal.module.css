@@ -1,0 +1,41 @@
+.terminal {
+  border-top: 1px solid lightgray;
+  height: 120px;
+  position: fixed;
+  bottom: 25px;
+  width: 89%;
+  background-color: #1f2428;
+}
+
+.terminal_header {
+  display: flex;
+  width: 1800px;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+  left: 0;
+  right: 0;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1f2428;
+  color: #fff;
+}
+
+.tabs p {
+  margin: 0 10px;
+  font-size: x-small;
+  color: silver;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1f2428;
+  color: #fff;
+  flex: end;
+}
