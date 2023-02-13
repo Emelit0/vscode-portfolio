@@ -4,6 +4,7 @@ import Explorer from "./Explorer";
 import styles from "../styles/Layout.module.css";
 import Footer from "./Footer";
 import TabBar from "./TabBar";
+import Terminal from "./Terminal";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -15,6 +16,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div style={{ width: "100%" }}>
           <TabBar />
           <main className={styles.content}>{children}</main>
+          <Terminal />
         </div>
       </div>
       <Footer />
