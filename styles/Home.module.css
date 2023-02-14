@@ -7,13 +7,20 @@
 }
 
 .background {
-  font-size: 5rem;
+  font-size: 3.6em;
   font-family: "Montserrat";
-  line-height: 1.1;
+  line-height: 1;
   color: var(--bg-text);
   position: fixed;
-  bottom: 30%;
+  right: 0;
+  bottom: 32%;
   z-index: 1;
+}
+
+.background h1 {
+  font-size: 1.6em;
+  right: 0;
+  text-align: right;
 }
 
 .foreground {
@@ -23,7 +30,8 @@
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  bottom: 30%;
+  bottom: 40%;
+  right: 6%;
 }
 
 .name {

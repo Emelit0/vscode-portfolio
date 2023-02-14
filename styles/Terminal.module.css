@@ -9,8 +9,7 @@
 
 .terminal_header {
   display: flex;
-  width: 1800px;
-  margin: 0;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   left: 0;
@@ -37,5 +36,14 @@
   justify-content: space-between;
   background-color: #1f2428;
   color: #fff;
-  flex: end;
+  margin-left: 500px;
+  align-self: flex-end;
+}
+
+.tbody {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1f2428;
+  color: #fff;
 }
