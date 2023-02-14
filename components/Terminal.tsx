@@ -19,7 +19,7 @@ const Terminal: React.FC = (): ReactElement => {
           <p>DEBUG CONSOLE</p>
           <p>TERMINAL</p>
         </div>
-        <div className="options">
+        <div className={styles.options}>
           <ArrowRight />
           <Plus />
           <ArrowDown />
@@ -29,7 +29,37 @@ const Terminal: React.FC = (): ReactElement => {
           <ArrowUp />
           <Close />
         </div>
-        <div className="terminal__body"></div>
+      </div>
+      <div className={styles.terminal_body}>
+        <div className="firstLine">
+          <p>emelito@Workstation</p>
+          <p>:</p>
+          <p>~/workspace/repos/vscode-portfolio</p>
+          <p>$</p>
+          <p>npm run dev</p>
+        </div>
+        <div className="secondLine">
+          <p>ready</p>
+          <p> - started server on 0.0.0.0:3000, url: http://localhost:3000</p>
+        </div>
+        <div className="thirdLine">
+          <p>info</p>
+          <p>
+            {" "}
+            - Loaded env from /home/user/workspace/repos/vscode-portfolio/.env
+          </p>
+        </div>
+        <div className="fourthLine">
+          <p>event</p>
+          <p>
+            {" "}
+            - compiled client and server succesfully in 4.5s (11288modules)
+          </p>
+        </div>
+        <div className="fifthLine">
+          <p>wait</p>
+          <p> - compiling / (client and server)...</p>
+        </div>
       </div>
     </div>
   );
