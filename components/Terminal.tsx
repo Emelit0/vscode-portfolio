@@ -30,35 +30,34 @@ const Terminal: React.FC = (): ReactElement => {
           <Close />
         </div>
       </div>
-      <div className={styles.terminal_body}>
-        <div className="firstLine">
-          <p>emelito@Workstation</p>
-          <p>:</p>
-          <p>~/workspace/repos/vscode-portfolio</p>
-          <p>$</p>
-          <p>npm run dev</p>
+      <div className={styles.tbody}>
+        <div className={styles.firstLine}>
+          <p className={styles.green}>emelito@Workstation</p>
+          <p className={styles.white}>:</p>
+          <p className={styles.blue}>~/workspace/repos/vscode-portfolio</p>
+          <p className={styles.white}>$</p>
+          <p className={styles.white}>npm run dev</p>
         </div>
-        <div className="secondLine">
-          <p>ready</p>
-          <p> - started server on 0.0.0.0:3000, url: http://localhost:3000</p>
+        <div className={styles.secondLine}>
+          <p className={styles.green}>ready</p>
+          <p className={styles.white}>
+            {" "}
+            - started server on 0.0.0.0:3000, url: http://localhost:3000
+          </p>
         </div>
-        <div className="thirdLine">
-          <p>info</p>
-          <p>
+        <div className={styles.thirdLine}>
+          <p className={styles.blue}>info</p>
+          <p className={styles.white}>
             {" "}
             - Loaded env from /home/user/workspace/repos/vscode-portfolio/.env
           </p>
         </div>
-        <div className="fourthLine">
-          <p>event</p>
-          <p>
+        <div className={styles.fourthLine}>
+          <p className={styles.purple}>event</p>
+          <p className={styles.white}>
             {" "}
             - compiled client and server succesfully in 4.5s (11288modules)
           </p>
-        </div>
-        <div className="fifthLine">
-          <p>wait</p>
-          <p> - compiling / (client and server)...</p>
         </div>
       </div>
     </div>

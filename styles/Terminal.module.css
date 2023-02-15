@@ -40,10 +40,60 @@
   align-self: flex-end;
 }
 
-.tbody {
+.firstLine {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: left;
   background-color: #1f2428;
-  color: #fff;
+  margin-top: 6px;
+}
+
+.secondLine {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-color: #1f2428;
+  margin-top: 6px;
+}
+
+.thirdLine {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-color: #1f2428;
+  margin-top: 6px;
+}
+
+.fourthLine {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-color: #1f2428;
+  margin-top: 6px;
+}
+
+.fifthLine {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-color: #1f2428;
+  margin-top: 6px;
+}
+.firstLine p {
+  margin-left: 10px;
+}
+.green {
+  color: #40ee68;
+}
+
+.white {
+  color: lightgray;
+}
+
+.blue {
+  color: #00bfff;
+}
+
+.purple {
+  color: #ff00ff;
 }
