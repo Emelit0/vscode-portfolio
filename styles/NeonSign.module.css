@@ -1,0 +1,45 @@
+.neon {
+  font-family: "Monoton", cursive;
+  font-size: 130px;
+  color: #ffd5ff;
+  transform: translate(-50%, -50%);
+  font-weight: 600;
+  text-shadow: 1px 0px 4px #ffd5ff, 2px 0px 4px #ffd5ff, 3px 0px 4px #ffd5ff,
+    2px 0px 3px #d42cca, 2px 3px 15px #d42cca, 2px 0px 15px, 5px 0px 125px,
+    20px 0vw 200px #d42cca, 40px 0vw 200px #d42cca;
+  position: fixed;
+  top: 4%;
+  right: 0;
+  font-size: 80px;
+  letter-spacing: 0px;
+}
+
+.flickeSlow {
+  animation: flicker 3s linear infinite;
+}
+
+.flickerFast {
+  animation: flicker 1s linear infinite;
+}
+
+@keyframes flicker {
+  0%,
+  19.999%,
+  22%,
+  62.999%,
+  64%,
+  64.999%,
+  70%,
+  100% {
+    /* text-shadow: none; */
+    opacity: 0.99;
+  }
+  20%,
+  21.999%,
+  63%,
+  63.999%,
+  65%,
+  69.999% {
+    opacity: 0.4;
+  }
+}
