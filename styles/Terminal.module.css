@@ -2,14 +2,15 @@
   border-top: 1px solid lightgray;
   height: 120px;
   position: fixed;
-  bottom: 25px;
+  bottom: 31px;
   width: 89%;
   background-color: #1f2428;
+  zoom: 0.9;
 }
 
 .terminal_header {
   display: flex;
-  width: 100%;
+  width: 95%;
   justify-content: space-between;
   align-items: center;
   left: 0;
@@ -79,21 +80,23 @@
   background-color: #1f2428;
   margin-top: 6px;
 }
-.firstLine p {
-  margin-left: 10px;
-}
+
 .green {
   color: #40ee68;
+  margin-left: 10px;
 }
 
 .white {
   color: lightgray;
+  margin-left: 10px;
 }
 
 .blue {
   color: #00bfff;
+  margin-left: 10px;
 }
 
 .purple {
   color: #ff00ff;
+  margin-left: 10px;
 }

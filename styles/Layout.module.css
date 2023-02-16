@@ -39,3 +39,17 @@
     padding: 2rem 1rem;
   }
 }
+
+.image {
+  position: fixed;
+  z-index: 1;
+  bottom: 124px;
+  right: -29px;
+}
+
+.image3 {
+  position: fixed;
+  z-index: 1;
+  bottom: -2px;
+  left: 190px;
+}

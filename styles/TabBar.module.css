@@ -3,6 +3,7 @@
   /* flex-wrap: wrap; */
   background: var(--tabs-bg);
   overflow-x: auto;
+  zoom: 0.9;
 }
 
 @media screen and (max-width: 900px) {

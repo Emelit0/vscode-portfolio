@@ -1,9 +1,10 @@
 .explorer {
   background: var(--explorer-bg);
-  width: 18vw;
+  width: 15vw;
   color: rgb(225, 228, 232);
   font-family: "Source Sans Pro", sans-serif;
   border-right: 1px solid var(--explorer-border);
+  zoom: 0.9;
 }
 
 .heading {
