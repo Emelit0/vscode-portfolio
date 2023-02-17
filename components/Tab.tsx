@@ -1,10 +1,9 @@
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+
 import styles from "../styles/Tab.module.css";
 import * as React from "react";
+import { useRouter } from "next/router";
 
 type imageProps = {
   icon: string;
@@ -13,13 +12,17 @@ type imageProps = {
 };
 
 const Tab = ({ icon, filename, path }: imageProps) => {
-  const pathName = usePathname();
+  const router = useRouter();
 
   return (
-    <Link href={path}>
-      <div className={`${styles.tab} ${pathName === path && styles.active} `}>
+    <Link href={path} className={styles.noUnderline}>
+      <div
+        className={`${styles.tab} ${
+          router.pathname === path && styles.active
+        } `}
+      >
         <Image src={icon} alt={filename} height={18} width={18} />
-        <p className={styles.tabText}>{filename}</p>
+        <p className={styles.p}>{filename}</p>
       </div>
     </Link>
   );
