@@ -8,24 +8,15 @@
   font-family: "Source Sans Pro", sans-serif;
   font-size: 0.9rem;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .tab p {
   margin-left: 5px;
-}
-.tabText:link {
   text-decoration: none;
 }
 
-.tabText:visited {
-  text-decoration: none;
-}
-
-.tabText:hover {
-  text-decoration: none;
-}
-
-.tabText:active {
+.tab a {
   text-decoration: none;
 }
 
@@ -33,4 +24,8 @@
   border-top: 1px solid var(--accent-color);
   background: var(--tab-active-bg);
   border-bottom: none;
+}
+
+.noUnderline {
+  text-decoration: none;
 }
