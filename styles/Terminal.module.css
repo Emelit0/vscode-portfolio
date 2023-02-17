@@ -22,10 +22,17 @@
   align-items: center;
   justify-content: space-between;
   background-color: #1f2428;
-  color: #fff;
+  color: #ffffff;
 }
 
 .tabs p {
+  margin: 0 10px;
+  font-size: x-small;
+  color: silver;
+}
+
+.underlined {
+  border-bottom: 1px solid #ffffff;
   margin: 0 10px;
   font-size: x-small;
   color: silver;
@@ -36,9 +43,13 @@
   align-items: center;
   justify-content: space-between;
   background-color: #1f2428;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.62);
   margin-left: 500px;
   align-self: flex-end;
+}
+
+.options > * {
+  margin: 0 3px;
 }
 
 .firstLine {
@@ -87,7 +98,7 @@
 }
 
 .white {
-  color: lightgray;
+  color: rgba(192, 192, 192, 0.883);
   margin-left: 10px;
 }
 
@@ -99,4 +110,13 @@
 .purple {
   color: #ff00ff;
   margin-left: 10px;
+}
+
+.noSpace {
+  font-weight: bold;
+  color: rgba(192, 192, 192, 0.87);
+}
+
+.path {
+  color: #00bfff;
 }

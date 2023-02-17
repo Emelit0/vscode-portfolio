@@ -17,10 +17,11 @@ const Terminal: React.FC = (): ReactElement => {
           <p>PROBLEMS</p>
           <p>OUTPUT</p>
           <p>DEBUG CONSOLE</p>
-          <p>TERMINAL</p>
+          <p className={styles.underlined}>TERMINAL</p>
         </div>
         <div className={styles.options}>
           <ArrowRight />
+          <p>npm - vscode-portfolio</p>
           <Plus />
           <ArrowDown />
           <SplitHorizontal />
@@ -33,9 +34,9 @@ const Terminal: React.FC = (): ReactElement => {
       <div className={styles.tbody}>
         <div className={styles.firstLine}>
           <p className={styles.green}>emelito@Workstation</p>
-          <p className={styles.white}>:</p>
-          <p className={styles.blue}>~/workspace/repos/vscode-portfolio</p>
-          <p className={styles.white}>$</p>
+          <p className={styles.noSpace}>:</p>
+          <p className={styles.path}>~/workspace/repos/vscode-portfolio</p>
+          <p className={styles.noSpace}>$</p>
           <p className={styles.white}>npm run dev</p>
         </div>
         <div className={styles.secondLine}>
@@ -56,7 +57,7 @@ const Terminal: React.FC = (): ReactElement => {
           <p className={styles.purple}>event</p>
           <p className={styles.white}>
             {" "}
-            - compiled client and server succesfully in 4.5s (11288modules)
+            - compiled client and server successfully in 4.5s (11288modules)
           </p>
         </div>
       </div>
