@@ -1,4 +1,4 @@
-import styles from "../../styles/ContactCode.module.css";
+import styles from "../styles/ContactWidget.module.css";
 
 const contactItems = [
   {
@@ -28,7 +28,7 @@ const contactItems = [
   },
 ];
 
-const ContactCode = () => {
+const ContactWidget = () => {
   return (
     <div className={styles.code}>
       <p className={styles.line}>
@@ -57,4 +57,4 @@ const ContactCode = () => {
   );
 };
 
-export default ContactCode;
+export default ContactWidget;
