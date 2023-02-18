@@ -1,8 +1,6 @@
-"use client";
-
 import { useState } from "react";
-import ContactCode from "../components/ContactWidget";
-import styles from "../styles/ContactPage.module.css";
+import ContactWidget from "../components/ContactWidget";
+import styles from "../styles/Contact.module.css";
 
 const ContactPage = () => {
   const [name, setName] = useState("");
@@ -32,7 +30,7 @@ const ContactPage = () => {
     <div className={styles.container}>
       <div>
         <h3 className={styles.heading}>Reach Out Via Socials</h3>
-        <ContactCode />
+        <ContactWidget />
       </div>
       <div>
         <h3 className={styles.heading}>Or Fill Out This Form</h3>
