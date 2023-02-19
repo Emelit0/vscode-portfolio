@@ -34,6 +34,7 @@
   bottom: 40%;
   right: 38%;
   zoom: 1.4;
+  text-shadow: 0px 0px 30px black, 0px 0px 30px black, 0px 0px 40px black;
 }
 
 .name {
@@ -88,14 +89,13 @@
 }
 
 .button {
-  background: var(--accent-color);
   font-size: 1.25rem;
   padding: 0.5rem 1rem;
-  margin-right: 1.5rem;
   color: #eee;
-  font-weight: 600;
-  border: none;
+  border: 2px solid var(--accent-color);
+  background: transparent;
   cursor: pointer;
+  margin-right: 2rem;
 }
 
 .outlined {
@@ -227,4 +227,15 @@
     height: 50vh;
     z-index: 1;
   }
+}
+
+.outerContainer {
+  padding: 2rem;
+  padding-top: 0;
+  color: var(--text-color);
+  font-family: "JetBrains Mono", monospace;
+  flex: 1;
+  height: 85vh;
+  overflow-y: auto;
+  display: flex;
 }
