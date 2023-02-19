@@ -2,10 +2,9 @@
 const nextConfig = {
   images: {
     domains: [
-      "avatars.githubusercontent.com",
       "res.cloudinary.com",
-      "avatars.githubusercontent.com",
       "imgur.com",
+      "avatars.githubusercontent.com",
     ],
   },
   experimental: {
@@ -16,6 +15,11 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "imgur.com",
+        port: "",
+      },
+      {
+        protocol: "https",
+        hostname: "avatars.githubusercontent.com",
         port: "",
       },
     ],
