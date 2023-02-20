@@ -38,6 +38,12 @@
   margin-bottom: 1.5rem;
 }
 
+.contributions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .contributions article {
   width: 100% !important;
 }

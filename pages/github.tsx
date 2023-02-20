@@ -39,7 +39,7 @@ const GithubPage = ({ repos, user }: any) => {
       </div>
       <div className={styles.contributions}>
         <GitHubCalendar
-          username={process.env.GITHUB_USERNAME!}
+          username="Emelit0"
           theme={theme}
           hideColorLegend
           hideMonthLabels
