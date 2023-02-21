@@ -93,7 +93,7 @@
 }
 
 .green {
-  color: #40ee68;
+  color: rgb(152, 195, 121);
   margin-left: 10px;
 }
 
@@ -103,12 +103,12 @@
 }
 
 .blue {
-  color: #00bfff;
+  color: rgb(86, 182, 194);
   margin-left: 10px;
 }
 
 .purple {
-  color: #ff00ff;
+  color: rgb(198, 120, 221);
   margin-left: 10px;
 }
 
@@ -118,5 +118,5 @@
 }
 
 .path {
-  color: #00bfff;
+  color: rgb(86, 182, 194);
 }
