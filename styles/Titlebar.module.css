@@ -79,3 +79,12 @@
     flex: 4;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .title {
+    display: none;
+  }
+  .navbar_items {
+    margin-left: 20px;
+  }
+}
