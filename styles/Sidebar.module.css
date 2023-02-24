@@ -55,7 +55,9 @@
 
 @media screen and (max-width: 600px) {
   .sidebar {
-    width: 10vw;
+    width: 14vw;
+
+    height: 120vh;
   }
   .icon {
     height: 40px;

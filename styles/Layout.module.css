@@ -36,6 +36,16 @@
 @media screen and (max-width: 600px) {
   .content {
     padding: 2rem 1rem;
+    height: 120vh;
+  }
+  .outerContainer:last-child {
+    display: none;
+  }
+  .main {
+    width: 114%;
+  }
+  .box {
+    display: none;
   }
 }
 

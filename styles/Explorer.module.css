@@ -74,7 +74,7 @@
 
 @media screen and (max-width: 600px) {
   .explorer {
-    display: none;
+    width: 50vw;
   }
 }
 
