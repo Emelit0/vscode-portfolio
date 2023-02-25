@@ -63,3 +63,17 @@
 .underline:hover {
   background-size: 100% 88%;
 }
+
+@media screen and (min-width: 400px) {
+  .card {
+    height: 280px;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 200px) {
+  .card {
+    height: 300px;
+    margin-bottom: 2rem;
+  }
+}

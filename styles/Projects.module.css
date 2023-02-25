@@ -6,3 +6,11 @@
   gap: 1.5rem;
   overflow: hidden;
 }
+
+@media screen and (max-width: 600px) {
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    grid-template-rows: repeat(4, minmax(240px, 2fr));
+    justify-content: space-around;
+  }
+}
