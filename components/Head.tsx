@@ -19,6 +19,7 @@ const MetaHead = ({ title }: any) => {
       />
       #need to add image
       <meta property="og:url" content="" /> need to add html_url
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </Head>
   );
 };
