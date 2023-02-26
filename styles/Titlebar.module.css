@@ -88,3 +88,9 @@
     margin-left: 20px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .titlebar {
+    width: 120vw;
+  }
+}

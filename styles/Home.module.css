@@ -205,6 +205,7 @@
 @media screen and (max-width: 600px) {
   .foreground {
     margin: 0;
+    right: 30%;
   }
   .name {
     font-size: 2rem;
@@ -229,6 +230,11 @@
   }
   .container {
     position: absolute;
+    display: none;
+  }
+  .hiddenForeground {
+    display: block;
+    position: absolute;
   }
 }
 
@@ -241,4 +247,9 @@
   height: 85vh;
   overflow-y: auto;
   display: flex;
+}
+
+.hiddenForeground {
+  position: absolute;
+  display: none;
 }

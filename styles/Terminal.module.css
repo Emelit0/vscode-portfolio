@@ -120,3 +120,15 @@
 .path {
   color: rgb(86, 182, 194);
 }
+
+@media screen and (max-width: 600px) {
+  .terminal {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .termianl {
+    display: none;
+  }
+}
