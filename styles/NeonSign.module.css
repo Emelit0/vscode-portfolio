@@ -59,3 +59,17 @@
     right: 100px;
   }
 }
+
+@media screen and (max-width: 1300px) {
+  .neon {
+    font-size: 40px;
+    right: 100px;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .neon {
+    font-size: 50px;
+    right: 100px;
+  }
+}

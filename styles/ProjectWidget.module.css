@@ -75,5 +75,12 @@
   .card {
     height: 300px;
     margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  .card p {
+    font-size: 1.6rem;
+  }
+  .tags span {
+    font-size: 1.2rem;
   }
 }
