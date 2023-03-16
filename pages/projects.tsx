@@ -1,5 +1,3 @@
-"use client";
-
 import ProjectWidget from "../components/ProjectWidget";
 import styles from "../styles/Projects.module.css";
 import { getProjects } from "../api/projects";
