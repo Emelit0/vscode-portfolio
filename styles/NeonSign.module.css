@@ -1,6 +1,5 @@
 .neon {
   font-family: "Monoton", cursive;
-  font-size: 130px;
   color: #ffd5ff;
   transform: translate(-50%, -50%);
   font-weight: 600;
@@ -10,7 +9,7 @@
   position: fixed;
   top: 4%;
   right: -78px;
-  font-size: 80px;
+  font-size: 60px;
   letter-spacing: 0px;
   zoom: 0.9;
 }

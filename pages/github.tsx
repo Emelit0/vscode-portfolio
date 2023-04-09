@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import GitHubCalendar from "react-github-calendar";
 import RepoWidget from "../components/RepoWidget";
