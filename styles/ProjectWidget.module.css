@@ -16,6 +16,10 @@
 .content {
   padding: 1rem;
   border-radius: 0 0 20px 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
 }
 
 .content p {
@@ -64,6 +68,23 @@
   background-size: 100% 88%;
 }
 
+.projectName {
+  font-size: 1.4rem;
+  line-height: 12px;
+}
+
+.projectDesc {
+  font-size: 0.6rem;
+}
+
+.tags span {
+  font-size: 1;
+}
+
+.cta {
+  margin-top: auto;
+}
+
 @media screen and (min-width: 400px) {
   .card {
     height: 280px;
@@ -77,10 +98,7 @@
     margin-bottom: 2rem;
     font-size: 2rem;
   }
-  .card p {
-    font-size: 1.6rem;
-  }
   .tags span {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
 }

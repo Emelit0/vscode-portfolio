@@ -16,8 +16,8 @@ const ProjectWidget = ({ project }: { project: ProjectProps }) => {
     <div className={styles.card}>
       {/* <Image src={project.image} height={300} width={600} alt={project.name} /> */}
       <div className={styles.content}>
-        <h3>{project.name}</h3>
-        <p>{project.description}</p>
+        <h3 className={styles.projectName}>{project.name}</h3>
+        <p className={styles.projectDesc}>{project.description}</p>
         <div className={styles.tags}>
           {project.tags.map((tag) => (
             <span key={tag} className={tag}>

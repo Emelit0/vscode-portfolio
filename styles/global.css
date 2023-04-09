@@ -32,3 +32,7 @@
   --scrollbar-thumb-bg: #333536;
   --article-bg: #1f2428;
 }
+
+html {
+  font-size: var(--font-root);
+}
