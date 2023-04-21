@@ -15,7 +15,7 @@ const explorerIcons = [
   },
   {
     name: "docs.js",
-    path: "/",
+    path: "/docs",
     icon: "js.svg",
   },
   {
