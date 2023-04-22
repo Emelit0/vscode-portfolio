@@ -1,6 +1,7 @@
 import * as React from "react"
+import { SVGProps } from "react"
 
-const CssIcon = () => {
+const CssIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       className="icon"

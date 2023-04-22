@@ -1,7 +1,7 @@
 import * as React from "react";
 import { SVGProps } from "react";
 
-const ReactIcon = () => {
+const ReactIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       className="icon"
