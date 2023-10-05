@@ -1,5 +1,7 @@
 This is a portfolio website that looks like vscode!
 
+![Vscode Portfolio](/docs/vscode-portfolio.gif)
+
 ![Alt text](/public/homePage.png?raw=true)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).#
